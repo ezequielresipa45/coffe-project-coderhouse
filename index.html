@@ -20,20 +20,110 @@
     />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-
-
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="contenedor">
+
+   
+
+
+  </div>
+    <div class="contenedor ">
+
+
+   
+
+      <!-- Button trigger modal -->
+      <div class="boton-fuera animate__animated animate__backInUp">
+      <button type="button" class=" boton-modal animate__animated   animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Consultas
+      </button>
+    </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header ">
+              <h5 class="modal-title " id="exampleModalLabel">Consultas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             
+
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group mt-3">
+                  <label for="exampleFormControlSelect1">Seleccione</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Consultas</option>
+                    <option>Reclamos</option>
+                    <option>Recetas</option>
+                    <option>Otros</option>
+                   
+                  </select>
+                </div>
+
+                <div class="form-group mt-3">
+                  <label for="exampleFormControlTextarea1">Mensaje</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary btn-color">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <header>
         <div class="header_contenedor_uno">
           <div class="contenedor_uno_logo">
             <img src="images/coffe-icon-2.png" width="40" alt="Logo de Café" />
-            <h1 >Coffe Bar</h1>
+            <h1>Coffe Bar</h1>
           </div>
 
           <nav>
@@ -47,8 +137,10 @@
           </nav>
         </div>
 
-        <div class="header_contenedor_dos  animate__animated  animate__bounceInLeft ">
-          <h2 >La Hora del Café invita a relajar</h2>
+        <div
+          class="header_contenedor_dos animate__animated animate__bounceInLeft"
+        >
+          <h2>La Hora del Café invita a relajar</h2>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut
@@ -56,7 +148,9 @@
           </p>
         </div>
 
-        <div class="header_contenedor_tres  animate__animated animate__fadeInUp animate__delay-1s   ">
+        <div
+          class="header_contenedor_tres animate__animated animate__fadeInUp animate__delay-1s"
+        >
           <a class="carta" href="pages/menu.html#section">Carta de cafés</a>
 
           <a class="nosotros" href="pages/nosotros.html">Sobre Nosotros</a>
@@ -184,6 +278,9 @@
           </p>
         </div>
       </footer>
-    </div>
+
+
+
   </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </html>
