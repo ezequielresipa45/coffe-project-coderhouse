@@ -832,8 +832,8 @@ color: #ffffff;
 .boton-fuera{
   
    position: fixed;
-  top: 93vh;;
-  left: 189vh;
+   bottom: 20px;
+   right: 10px;
   z-index: 5;
   
 }
