@@ -1,0 +1,22 @@
+{
+  "name": "ezequiel-resipa",
+  "version": "1.0.0",
+  "description": "Web Page shop of Coffe with HTML | CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezequielresipa45/coffe-project-coderhouse.git"
+  },
+  "author": "Ezequiel Resipa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezequielresipa45/coffe-project-coderhouse/issues"
+  },
+  "homepage": "https://github.com/ezequielresipa45/coffe-project-coderhouse#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}

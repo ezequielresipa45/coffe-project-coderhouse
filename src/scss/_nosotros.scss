@@ -1,0 +1,130 @@
+/* NOSOTROS.HTML */
+
+.nosotros {
+    height: auto;
+}
+
+.contenedor-nosotros {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 56rem;
+        height: 40rem;
+    }
+}
+.header_contenedor_dos_nosotros {
+    display: none;
+}
+
+.header_contenedor_tres_nosotros {
+    display: none;
+}
+
+.nosotros-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    .contenedor-nosotros .contenedor-nosotros-texto h1 {
+        margin: 0;
+        padding: 5rem 0;
+        text-align: start;
+    }
+
+    .contenedor-nosotros {
+        display: flex;
+        padding: 0 15rem;
+
+        gap: 5rem;
+    }
+}
+.contenedor-nosotros-texto {
+    h2 {
+        margin: 0;
+        font-size: 3.2rem;
+        color: #777;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    ul {
+        padding: 0;
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+    }
+
+    li {
+        color: #777;
+        font-weight: 200;
+    }
+
+    li svg {
+        width: 13px;
+        margin-right: 1rem;
+        fill: rgb(165, 165, 165);
+    }
+}
+.contenedor-nosotros-dos {
+    background-color: #b46d3b13;
+    display: flex;
+    margin-bottom: 8rem;
+    padding: 4rem 17em;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-nosotros-dos-videouno,
+.contenedor-nosotros-dos-videodos {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 950px) {
+    .contenedor-nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros-section .contenedor-nosotros .contenedor-nosotros-texto h1 {
+        text-align: center;
+        padding-top: 0;
+    }
+    .nosotros-section .contenedor-nosotros {
+        padding: 0;
+        margin: 0;
+        gap: 0;
+    }
+
+    .contenedor-nosotros img {
+        width: 100%;
+        max-width: 60rem;
+    }
+
+    .contenedor-nosotros-texto {
+        padding: 2rem;
+    }
+
+    .contenedor-nosotros-texto ul {
+        text-align: center;
+    }
+
+    .contenedor-nosotros-dos {
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+
+    .contenedor-nosotros-dos-videouno,
+    .contenedor-nosotros-dos-videodos {
+        align-items: center;
+    }
+}
+
+/* FIN NOSOTROS.HTML */
