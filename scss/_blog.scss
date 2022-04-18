@@ -1,0 +1,39 @@
+/* BLOG.HTML */
+
+.section-blog {
+    padding-top: 0;
+}
+
+.blog-contenedor {
+    height: 25rem;
+    background-image: url(../images/banner3.jpg);
+}
+
+.header_contenedor_dos_blog {
+    display: none;
+}
+
+.header_contenedor_tres_blog {
+    display: none;
+}
+
+.contenedor-blog h2 {
+    text-align: center;
+}
+
+.contenedor-blog img {
+    width: 80vw;
+}
+
+.blog-datos {
+    display: flex;
+
+    gap: 3rem;
+
+    svg {
+        width: 12px;
+        margin-right: 0.5rem;
+        fill: #d88f08;
+    }
+}
+/* FIN BLOG.HTML */
