@@ -21,3 +21,28 @@ html {
   
     margin-left: 10rem;
   }
+
+
+
+  //MAPS 
+
+  $colores:(/*Declaración de mapa*/
+
+          secundario:#ffffff,
+          principal:#d88f08,
+          width: 100%,
+
+  );
+
+
+  //MIXIN
+
+  @mixin displayMixin($display,$justify,$align) {
+
+    display: $display;
+
+    justify-content: $justify;
+
+    align-items: $align;
+    
+  }

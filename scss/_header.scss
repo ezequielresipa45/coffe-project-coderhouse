@@ -39,7 +39,7 @@ header::before {
     z-index: 1;
 
      h1 {
-        color: #ffffff;
+        color:map-get($colores, secundario);
         font-size: 40px;
         font-weight: 400;
         
@@ -66,12 +66,12 @@ ul {
 li a {
     font-size: 25px;
     text-decoration: none;
-    color: #ffffff;
+    color:map-get($colores, secundario);
     font-weight: 200;
 }
 
 .selector {
-    color: #d88f08;
+    color:map-get($colores, principal);
 }
 
 .header_contenedor_dos {
@@ -87,7 +87,7 @@ li a {
     h2 {
         font-size: 50px;
         width: 60rem;
-        color: #ffffff;
+        color:map-get($colores, secundario);
         margin-bottom: 0;
         z-index: 1;
     }
@@ -95,7 +95,7 @@ li a {
     p {
         font-size: 20px;
         width: 60rem;
-        color: #ffffff;
+        color:map-get($colores, secundario);
         z-index: 1;
     }
 }
@@ -108,23 +108,25 @@ li a {
 
     a {
         text-decoration: none;
-        color: #ffffff;
+        color:map-get($colores, secundario);
         font-size: 2rem;
-        background-color: #d88f08;
+        background-color:map-get($colores, principal);
         padding: 1.5rem;
         border-radius: 0.5rem;
         z-index: 1;
     }
 
+    
+
     .nosotros {
         background-color: #ffffff;
-        color: #d88f08;
+        color:map-get($colores, principal);
     }
 }
 @media screen and (max-width: 950px) {
     header {
         height: auto;
-        width: 100%;
+        width:map-get($colores, width);
     }
 
     .header_contenedor_uno {
@@ -136,7 +138,7 @@ li a {
     }
 
     .header_contenedor_tres {
-        width: 100%;
+        width:map-get($colores, width);
         padding: 2rem 0;
         margin: 0;
     }
