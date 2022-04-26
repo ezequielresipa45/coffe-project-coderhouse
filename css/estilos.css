@@ -363,6 +363,9 @@ hr {
   padding: 3rem;
   text-align: center;
   font-size: 2rem; }
+  .contenedor-nosotros-dos-videouno iframe,
+  .contenedor-nosotros-dos-videodos iframe {
+    border: none; }
 
 @media screen and (max-width: 950px) {
   .contenedor-nosotros {
@@ -561,9 +564,9 @@ textarea {
   .navegador-main p {
     font-size: 2rem; }
 
-main h1 {
+h1 {
   text-align: center;
-  font-size: 5rem; }
+  font-size: 3rem; }
 
 .contenedor-menu {
   display: grid;
