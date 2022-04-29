@@ -1,48 +1,50 @@
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Exo 2", sans-serif;
-  }
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  cursor: url(../images/cursor.png), auto;
+}
 
-  section {
-    display: grid;
-  
-    grid-template-columns: 1fr 1fr;
-  
-    padding: 8rem 8rem;
-  
-    gap: 6rem;
-  
-    margin-left: 10rem;
-  }
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(0, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #d88f08;
+  border-radius: 2px;
+}
 
+a {
+  cursor: url(../images/seleccione.png), auto;
+}
 
+section {
+  display: grid;
 
-  //MAPS 
+  grid-template-columns: 1fr 1fr;
 
-  $colores:(/*Declaración de mapa*/
+  padding: 8rem 8rem;
 
-          secundario:#ffffff,
-          principal:#d88f08,
-          width: 100%,
+  gap: 6rem;
 
-  );
+  margin-left: 10rem;
+}
 
+//MAPS
 
-  //MIXIN
+$colores: (/*Declaración de mapa*/ secundario: #ffffff, principal: #d88f08, width: 100%);
 
-  @mixin displayMixin($display,$justify,$align) {
+//MIXIN
 
-    display: $display;
+@mixin displayMixin($display, $justify, $align) {
+  display: $display;
 
-    justify-content: $justify;
+  justify-content: $justify;
 
-    align-items: $align;
-    
-  }
+  align-items: $align;
+}
