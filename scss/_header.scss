@@ -7,10 +7,77 @@ header {
     background-size: cover;
     height: 46vw;
     position: relative;
-}
 
-.menu-header {
-    background-image: url(../images/banner2.jpg);
+    .header_contenedor_uno {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .header_contenedor_dos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 35vw;
+
+        width: 95rem;
+
+        h2 {
+            font-size: 50px;
+            width: 60rem;
+            color: map-get($colores, secundario);
+            margin-bottom: 0;
+            z-index: 1;
+        }
+
+        p {
+            font-size: 20px;
+            width: 60rem;
+            color: map-get($colores, secundario);
+            z-index: 1;
+        }
+
+        .header_contenedor_tres {
+            width: 60rem;
+            display: flex;
+            justify-content: start;
+            gap: 2rem;
+            // margin-top: 5rem;
+
+            a {
+                height: auto;
+                text-decoration: none;
+                color: map-get($colores, secundario);
+                font-size: 2rem;
+                background-color: map-get($colores, principal);
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                z-index: 1;
+            }
+
+            .carta {
+                &:hover {
+                    border: 2px solid #d88f08;
+                    background-color: transparent;
+                    transition: 1s;
+                }
+            }
+
+            .nosotros {
+                background-color: #ffffff;
+                color: map-get($colores, principal);
+
+                &:hover {
+                    border: 2px solid #ffffff;
+                    background-color: transparent;
+                    transition: 1s;
+                }
+            }
+        }
+    }
 }
 
 header::before {
@@ -23,13 +90,6 @@ header::before {
     right: 0;
 }
 
-.header_contenedor_uno {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2rem;
-}
-
 .contenedor_uno_logo {
     display: flex;
     align-items: center;
@@ -38,115 +98,105 @@ header::before {
     margin-bottom: 0.5rem;
     z-index: 1;
 
-     h1 {
-        color:map-get($colores, secundario);
+    h1 {
+        color: map-get($colores, secundario);
         font-size: 40px;
         font-weight: 400;
-        
-    }
-
-     img {
-        margin-bottom: 0.5rem;
-    }
-}
-nav {
-    display: flex;
-    align-items: center;
-    z-index: 1;
-}
-
-ul {
-    display: flex;
-    gap: 3rem;
-
-    li {
-        list-style: none;
-    }
-}
-li a {
-    font-size: 25px;
-    text-decoration: none;
-    color:map-get($colores, secundario);
-    font-weight: 200;
-}
-
-.selector {
-    color:map-get($colores, principal);
-}
-
-.header_contenedor_dos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    height: 24vw;
-
-    width: 95rem;
-
-    h2 {
-        font-size: 50px;
-        width: 60rem;
-        color:map-get($colores, secundario);
-        margin-bottom: 0;
-        z-index: 1;
-    }
-
-    p {
-        font-size: 20px;
-        width: 60rem;
-        color:map-get($colores, secundario);
-        z-index: 1;
-    }
-}
-.header_contenedor_tres {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-left: 1rem;
-
-    a {
-        text-decoration: none;
-        color:map-get($colores, secundario);
-        font-size: 2rem;
-        background-color:map-get($colores, principal);
-        padding: 1.5rem;
-        border-radius: 0.5rem;
-        z-index: 1;
-    }
-
-    
-
-    .nosotros {
-        background-color: #ffffff;
-        color:map-get($colores, principal);
-    }
-}
-@media screen and (max-width: 950px) {
-    header {
-        height: auto;
-        width:map-get($colores, width);
-    }
-
-    .header_contenedor_uno {
-        flex-direction: column;
-    }
-
-    .header_contenedor_dos {
-        display: none;
-    }
-
-    .header_contenedor_tres {
-        width:map-get($colores, width);
-        padding: 2rem 0;
         margin: 0;
     }
 
-    ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0 2rem;
+    img {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.sin-flex {
+    display: inline-block !important;
+
+    text-align: center;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    gap: 3rem;
+
+    a {
+        font-size: 25px;
+        text-decoration: none;
+        color: map-get($colores, secundario) !important;
+        font-weight: 200;
+
+        &:hover {
+            color: map-get($colores, principal) !important;
+        }
+    }
+
+    .selector {
+        color: map-get($colores, principal) !important;
+    }
+}
+
+.tazaDeCafe {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        height: auto;
+        width: map-get($colores, width);
+
+        .header_contenedor_uno {
+            padding: 0;
+
+            .contenedor_uno_logo {
+                display: none;
+            }
+        }
+
+        .header_contenedor_dos {
+            display: none;
+        }
+
+        .header_contenedor_tres {
+            width: map-get($colores, width);
+            padding: 2rem 0;
+            margin: 0;
+        }
+    }
+    .navbar {
+        .tazaDeCafe {
+            display: inline-block;
+        }
+
+        padding: 2rem 0;
+
+        width: 100%;
+        align-items: flex-start;
+
+        .container-fluid {
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            .navbar-toggler:focus,
+            .navbar-toggler:active {
+                outline: none;
+                box-shadow: none;
+            }
+            .navbar-toggler {
+                border: none;
+                .navbar-toggler-icon {
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        gap: 0.5rem;
+        margin-top: 1rem;
     }
 }
 

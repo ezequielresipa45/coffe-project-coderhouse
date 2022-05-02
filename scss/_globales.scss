@@ -19,8 +19,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 
-a {
-  cursor: url(../images/seleccione.png), auto;
+a,
+input,
+textarea {
+  cursor: url(../images/seleccione.png), auto !important;
 }
 
 section {

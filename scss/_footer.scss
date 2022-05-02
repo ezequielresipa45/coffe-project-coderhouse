@@ -52,13 +52,22 @@ footer {
 
 .enlaces-rapidos ul {
     display: flex;
-
+    gap: 3rem;
     align-items: center;
-}
 
-.enlaces-rapidos ul li a {
-    font-size: 2rem;
-    columns: #9c9a9a;
+    li {
+        list-style: none;
+
+        a {
+            font-size: 2rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 200;
+            &:hover {
+                color: map-get($colores, principal);
+            }
+        }
+    }
 }
 
 hr {
@@ -79,7 +88,7 @@ hr {
     margin-left: 5rem;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 991px) {
     footer {
         height: auto;
         padding: 2rem;

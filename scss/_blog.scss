@@ -5,20 +5,13 @@
 }
 
 .blog-contenedor {
-    height: 25rem;
+    height: 10vw;
     background-image: url(../images/banner3.jpg);
-}
-
-.header_contenedor_dos_blog {
-    display: none;
-}
-
-.header_contenedor_tres_blog {
-    display: none;
 }
 
 .contenedor-blog h2 {
     text-align: center;
+    margin: 2rem 0;
 }
 
 .contenedor-blog img {
@@ -36,4 +29,18 @@
         fill: #d88f08;
     }
 }
+
+.nota {
+    p {
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .blog-contenedor {
+        height: auto;
+    }
+}
+
 /* FIN BLOG.HTML */

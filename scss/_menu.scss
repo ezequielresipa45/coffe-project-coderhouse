@@ -1,8 +1,24 @@
 /* MENU.HTML */
 
+.menu-header {
+    background-image: url(../images/cafe-menu.jpg);
+
+    height: 10vw;
+}
+
+.menu-header::before {
+    content: "";
+    position: absolute;
+    background-color: #0000009f;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 /* section */
 
- .navegador-main {
+.navegador-main {
     background-color: #f3f3f3;
     @include displayMixin(flex, center, center);
 
@@ -19,10 +35,11 @@
     }
 }
 
-    h1 {
+h1 {
     text-align: center;
     font-size: 3rem;
-    
+
+    margin-top: 2rem;
 }
 
 .contenedor-menu {
@@ -34,8 +51,12 @@
 }
 
 .card {
-    @include displayMixin(flex, none, none);
+    flex-direction: row !important;
+
+    align-items: center;
+
     gap: 1rem;
+    border: none;
 
     img {
         width: 80px;
@@ -72,7 +93,11 @@
         color: #bbb;
     }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 991px) {
+    .menu-header {
+        height: auto;
+    }
+
     .contenedor-menu {
         grid-template-columns: 1fr;
         padding: 3rem;

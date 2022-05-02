@@ -14,7 +14,9 @@
     />
 
     <title>Caffe Bar - Menu</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/estilos.css" />
+
     <link
       rel="shortcut icon"
       href="../images/coffe-icon.png"
@@ -40,30 +42,41 @@
             <h1>Coffe Bar</h1>
           </div>
 
-          <nav>
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a class="selector" href="blog.html">Blog</a></li>
-              <li><a href="nosotros.html">Sobre Nosotros</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <div class="imagem">
+                <img
+                  src="../images/coffe-icon-2.png"
+                  width="40"
+                  class="tazaDeCafe"
+                  alt="Logo de Café"
+                />
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                  <a class="nav-link" href="menu.html">Menu</a>
+                  <a class="nav-link selector" href="blog.html">Blog</a>
+                  <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
           </nav>
-        </div>
-
-        <div class="header_contenedor_dos header_contenedor_dos_blog">
-          <h2>La Hora del Café invita a relajar</h2>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut
-            esse eos ipsam quam aliquam necessitatibus.
-          </p>
-        </div>
-
-        <div class="header_contenedor_tres header_contenedor_tres_blog">
-          <a class="carta" href="menu.html#section">Carta de cafés</a>
-
-          <a class="nosotros" href="nosotros.html">Sobre Nosotros</a>
         </div>
       </header>
 
@@ -96,30 +109,28 @@
                 >Caffe Bar
               </p>
             </div>
+            <div class="nota">
+              <p>
+                Basta con escuchar a alguien decir la palabra café para percibir
+                su aroma, saborearlo en la boca e incluso sentir su calidez en
+                el cuerpo.
+              </p>
+              <p>¿Pero porqué sucede esto?</p>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              nihil doloribus iure molestias quibusdam illum, ex nesciunt id
-              quae voluptatibus. Iusto quisquam blanditiis, iste debitis impedit
-              non earum voluptates suscipit. Dolores odio dignissimos dolor
-              quaerat earum officia exercitationem sed? Expedita ab nam nostrum
-              magni dignissimos esse blanditiis. Accusantium laboriosam
-              consequuntur quisquam ab ullam quam quas, iste nemo? Quam, debitis
-              consequatur? Suscipit odio iure ad maxime. Temporibus placeat
-              excepturi vero laboriosam tempore molestias alias fuga facilis
-              quae, harum repudiandae ipsum necessitatibus iure tenetur? Hic
-              inventore, perferendis iste doloremque nulla cumque quae? Nostrum,
-              incidunt dignissimos. Reprehenderit esse, recusandae delectus sint
-              reiciendis est temporibus sed placeat natus quae voluptatem, animi
-              aliquid perspiciatis maxime quos amet mollitia ratione perferendis
-              commodi consectetur in omnis voluptas? Aut tempora sit, non
-              incidunt inventore quis voluptatum debitis doloribus quam ipsa,
-              illum neque tenetur recusandae at alias nemo officiis impedit sunt
-              quisquam! Iure hic sed quia adipisci dignissimos optio. Tenetur
-              quos eum corrupti, vitae consequatur sunt quaerat eveniet ipsam
-              vero, labore maxime placeat enim pariatur voluptatibus ea, minima
-              repellendus alias id quia tempore.
-            </p>
+              <p>
+                Es que el café no es simplemente una bebida, es todo un ritual.
+              </p>
+              <p>
+                Su experiencia sensorial se debe a su composición, pero también
+                a los cientos de años de técnicas de producción, recolección,
+                tostado y preparación.
+              </p>
+              <p>
+                Sorprendente desde su proceso de siembra hasta el momento que lo
+                sientes en el paladar. Sus efectos estimulantes son capaces de
+                despertar sentidos y de percibir la vida con un sabor distinto.
+              </p>
+            </div>
           </div>
         </section>
       </main>
@@ -212,5 +223,6 @@
         </div>
       </footer>
     </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

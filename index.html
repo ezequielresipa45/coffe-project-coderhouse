@@ -33,7 +33,6 @@
     />
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -123,14 +122,45 @@
             <h1>Coffe Bar</h1>
           </div>
 
-          <nav>
-            <ul>
-              <li><a class="selector" href="index.html">Inicio</a></li>
-              <li><a href="pages/menu.html">Menu</a></li>
-              <li><a href="pages/blog.html">Blog</a></li>
-              <li><a href="pages/nosotros.html">Sobre Nosotros</a></li>
-              <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <div class="imagem">
+                <img
+                  src="images/coffe-icon-2.png"
+                  width="40"
+                  class="tazaDeCafe"
+                  alt="Logo de Café"
+                />
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a
+                    class="nav-link selector"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                  <a class="nav-link" href="pages/menu.html">Menu</a>
+                  <a class="nav-link" href="pages/blog.html">Blog</a>
+                  <a class="nav-link" href="pages/nosotros.html"
+                    >Sobre Nosotros</a
+                  >
+                  <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
           </nav>
         </div>
 
@@ -140,17 +170,17 @@
           <h2>La Hora del Café invita a relajar</h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut
-            esse eos ipsam quam aliquam necessitatibus.
+            Sorprendente desde su proceso de siembra hasta el momento que lo
+            sientes en el paladar.
           </p>
-        </div>
 
-        <div
-          class="header_contenedor_tres animate__animated animate__fadeInUp animate__delay-1s"
-        >
-          <a class="carta" href="pages/menu.html#section">Carta de cafés</a>
+          <div
+            class="header_contenedor_tres animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <a class="carta" href="pages/menu.html#section">Carta de cafés</a>
 
-          <a class="nosotros" href="pages/nosotros.html">Sobre Nosotros</a>
+            <a class="nosotros" href="pages/nosotros.html">Sobre Nosotros</a>
+          </div>
         </div>
       </header>
 
@@ -160,10 +190,9 @@
             <h4>Nuestras Habilidades</h4>
             <h2>Pruebe nuestra especialidad del día de los enamorados.</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              amet nihil rerum eveniet assumenda repellat, sint similique quod
-              dignissimos nobis iste error excepturi, saepe sed corporis.
-              Laudantium possimus amet quos.
+              Un proceso que se efectúa a altas temperaturas, en la que el café
+              ya líquido se pulveriza por medio de la presión del aire y el
+              calor. Conservando gran parte del aroma y el sabor.
             </p>
             <a href="pages/blog.html">Saber más</a>
           </div>
@@ -178,10 +207,9 @@
             <h4>Granos de Café</h4>
             <h2>Trabajamos con cultivo propio.</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              amet nihil rerum eveniet assumenda repellat, sint similique quod
-              dignissimos nobis iste error excepturi, saepe sed corporis t amet
-              consectetur adipisicing eli rerum eveniet assumenda rep.
+              Es 100% arábico elaborado por liofilización para mejor
+              preservación de aromas, sabor y textura original. Aporta un sabor
+              muy cercano al recién molido, de suave acidez y cuerpo completo.
             </p>
             <a href="pages/blog.html">Saber más</a>
           </div>
@@ -276,6 +304,7 @@
         </div>
       </footer>
     </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

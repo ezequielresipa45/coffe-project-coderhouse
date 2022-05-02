@@ -13,6 +13,7 @@
       content="CAFÉ, TIENDA, SABORES, 2022, AROMAS, CAPUCHINO, CARTAS, RECETAS, BLOG, FABRICA"
     />
     <title>Caffe Bar - Menu</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <link
       rel="shortcut icon"
@@ -39,30 +40,41 @@
             <h1>Coffe Bar</h1>
           </div>
 
-          <nav>
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="nosotros.html">Sobre Nosotros</a></li>
-              <li><a class="selector" href="contacto.html">Contacto</a></li>
-            </ul>
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <div class="imagem">
+                <img
+                  src="../images/coffe-icon-2.png"
+                  width="40"
+                  class="tazaDeCafe"
+                  alt="Logo de Café"
+                />
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                  <a class="nav-link" href="menu.html">Menu</a>
+                  <a class="nav-link" href="blog.html">Blog</a>
+                  <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                  <a class="nav-link selector" href="contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
           </nav>
-        </div>
-
-        <div class="header_contenedor_dos header_contenedor_dos_blog">
-          <h2>La Hora del Café invita a relajar</h2>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut
-            esse eos ipsam quam aliquam necessitatibus.
-          </p>
-        </div>
-
-        <div class="header_contenedor_tres header_contenedor_tres_blog">
-          <a class="carta" href="menu.html#section">Carta de cafés</a>
-
-          <a class="nosotros" href="nosotros.html">Sobre Nosotros</a>
         </div>
       </header>
 
@@ -90,9 +102,9 @@
 
             <div class="preguntas">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                 <path
-                  d="M494.586 164.516c-4.697-3.883-111.723-89.95-135.251-108.657C337.231 38.191 299.437 0 256 0c-43.205 0-80.636 37.717-103.335 55.859-24.463 19.45-131.07 105.195-135.15 108.549A48.004 48.004 0 0 0 0 201.485V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V201.509a48 48 0 0 0-17.414-36.993zM464 458a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V204.347c0-1.813.816-3.526 2.226-4.665 15.87-12.814 108.793-87.554 132.364-106.293C200.755 78.88 232.398 48 256 48c23.693 0 55.857 31.369 73.41 45.389 23.573 18.741 116.503 93.493 132.366 106.316a5.99 5.99 0 0 1 2.224 4.663V458zm-31.991-187.704c4.249 5.159 3.465 12.795-1.745 16.981-28.975 23.283-59.274 47.597-70.929 56.863C336.636 362.283 299.205 400 256 400c-43.452 0-81.287-38.237-103.335-55.86-11.279-8.967-41.744-33.413-70.927-56.865-5.21-4.187-5.993-11.822-1.745-16.981l15.258-18.528c4.178-5.073 11.657-5.843 16.779-1.726 28.618 23.001 58.566 47.035 70.56 56.571C200.143 320.631 232.307 352 256 352c23.602 0 55.246-30.88 73.41-45.389 11.994-9.535 41.944-33.57 70.563-56.568 5.122-4.116 12.601-3.346 16.778 1.727l15.258 18.526z"
+                  d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"
                 />
               </svg>
 
@@ -254,5 +266,6 @@
         </div>
       </footer>
     </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

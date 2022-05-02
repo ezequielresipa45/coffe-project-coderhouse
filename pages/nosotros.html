@@ -13,6 +13,7 @@
       content="CAFÉ, TIENDA, SABORES, 2022, AROMAS, CAPUCHINO, CARTAS, RECETAS, BLOG, FABRICA"
     />
     <title>Caffe Bar - Menu</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <link
       rel="shortcut icon"
@@ -39,32 +40,43 @@
             <h1>Coffe Bar</h1>
           </div>
 
-          <nav>
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li>
-                <a class="selector" href="nosotros.html">Sobre Nosotros</a>
-              </li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <div class="imagem">
+                <img
+                  src="../images/coffe-icon-2.png"
+                  width="40"
+                  class="tazaDeCafe"
+                  alt="Logo de Café"
+                />
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                  <a class="nav-link" href="menu.html">Menu</a>
+                  <a class="nav-link" href="blog.html">Blog</a>
+                  <a class="nav-link selector" href="nosotros.html"
+                    >Sobre Nosotros</a
+                  >
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
           </nav>
-        </div>
-
-        <div class="header_contenedor_dos header_contenedor_dos_nosotros">
-          <h2>La Hora del Café invita a relajar</h2>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut
-            esse eos ipsam quam aliquam necessitatibus.
-          </p>
-        </div>
-
-        <div class="header_contenedor_tres header_contenedor_tres_nosotros">
-          <a class="carta" href="menu.html#section">Carta de cafés</a>
-
-          <a class="nosotros" href="nosotros.html">Sobre Nosotros</a>
         </div>
       </header>
 
@@ -81,8 +93,8 @@
               <h1>Sobre Nosotros</h1>
               <h2>La forma más cómoda y fácil de hacer un café</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-                dolore quis. Ipsam, enim. Error, provident!
+                Es que el café no es simplemente una bebida, es todo un ritual
+                por eso aquí enseño nuestra receta especial!
               </p>
               <ul>
                 <li>
@@ -142,9 +154,9 @@
             <div class="contenedor-nosotros-dos-texto">
               <h2>¿Quieres conservar la video receta?</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat mollitia iusto facere quisquam animi nisi molestias
-                minima ea perspiciatis dolorum asperiores.
+                Una de las bebidas más consumidas en el mundo se merece un
+                espacio así y tu te mereces descubrir este mundo más allá de las
+                fronteras del café instantáneo.
               </p>
             </div>
 
@@ -265,5 +277,6 @@
         </div>
       </footer>
     </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

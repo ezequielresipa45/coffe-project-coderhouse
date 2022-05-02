@@ -74,6 +74,11 @@ textarea {
     color: #ffffff;
     border: none;
     margin: 0;
+
+    &:hover {
+        background-color: #b37605;
+        transition: 1s;
+    }
 }
 
 .caja-boton {
@@ -111,8 +116,8 @@ textarea {
 .direccion svg,
 .preguntas svg,
 .telefono svg {
-    width: 30px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     background-color: #d88f08;
     padding: 1rem;
     border-radius: 50%;

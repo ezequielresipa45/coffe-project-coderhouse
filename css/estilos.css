@@ -16,8 +16,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #d88f08;
   border-radius: 2px; }
 
-a {
-  cursor: url(../images/seleccione.png), auto; }
+a,
+input,
+textarea {
+  cursor: url(../images/seleccione.png), auto !important; }
 
 section {
   display: grid;
@@ -34,9 +36,54 @@ header {
   background-size: cover;
   height: 46vw;
   position: relative; }
-
-.menu-header {
-  background-image: url(../images/banner2.jpg); }
+  header .header_contenedor_uno {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem; }
+  header .header_contenedor_dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vw;
+    width: 95rem; }
+    header .header_contenedor_dos h2, header .header_contenedor_dos .card .info-card .nombre-precio p, .card .info-card .nombre-precio header .header_contenedor_dos p {
+      font-size: 50px;
+      width: 60rem;
+      color: #ffffff;
+      margin-bottom: 0;
+      z-index: 1; }
+    header .header_contenedor_dos p {
+      font-size: 20px;
+      width: 60rem;
+      color: #ffffff;
+      z-index: 1; }
+    header .header_contenedor_dos .header_contenedor_tres {
+      width: 60rem;
+      display: flex;
+      justify-content: start;
+      gap: 2rem; }
+      header .header_contenedor_dos .header_contenedor_tres a {
+        height: auto;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 2rem;
+        background-color: #d88f08;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        z-index: 1; }
+      header .header_contenedor_dos .header_contenedor_tres .carta:hover {
+        border: 2px solid #d88f08;
+        background-color: transparent;
+        transition: 1s; }
+      header .header_contenedor_dos .header_contenedor_tres .nosotros {
+        background-color: #ffffff;
+        color: #d88f08; }
+        header .header_contenedor_dos .header_contenedor_tres .nosotros:hover {
+          border: 2px solid #ffffff;
+          background-color: transparent;
+          transition: 1s; }
 
 header::before {
   content: "";
@@ -46,12 +93,6 @@ header::before {
   bottom: 0;
   left: 0;
   right: 0; }
-
-.header_contenedor_uno {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 2rem; }
 
 .contenedor_uno_logo {
   display: flex;
@@ -63,83 +104,69 @@ header::before {
   .contenedor_uno_logo h1 {
     color: #ffffff;
     font-size: 40px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin: 0; }
   .contenedor_uno_logo img {
     margin-bottom: 0.5rem; }
 
-nav {
+.sin-flex {
+  display: inline-block !important;
+  text-align: center; }
+
+.navbar-nav {
   display: flex;
   align-items: center;
-  z-index: 1; }
-
-ul {
-  display: flex;
+  z-index: 1;
   gap: 3rem; }
-  ul li {
-    list-style: none; }
-
-li a {
-  font-size: 25px;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 200; }
-
-.selector {
-  color: #d88f08; }
-
-.header_contenedor_dos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 24vw;
-  width: 95rem; }
-  .header_contenedor_dos h2, .header_contenedor_dos .card .info-card .nombre-precio p, .card .info-card .nombre-precio .header_contenedor_dos p {
-    font-size: 50px;
-    width: 60rem;
-    color: #ffffff;
-    margin-bottom: 0;
-    z-index: 1; }
-  .header_contenedor_dos p {
-    font-size: 20px;
-    width: 60rem;
-    color: #ffffff;
-    z-index: 1; }
-
-.header_contenedor_tres {
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-left: 1rem; }
-  .header_contenedor_tres a {
+  .navbar-nav a {
+    font-size: 25px;
     text-decoration: none;
-    color: #ffffff;
-    font-size: 2rem;
-    background-color: #d88f08;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    z-index: 1; }
-  .header_contenedor_tres .nosotros {
-    background-color: #ffffff;
-    color: #d88f08; }
+    color: #ffffff !important;
+    font-weight: 200; }
+    .navbar-nav a:hover {
+      color: #d88f08 !important; }
+  .navbar-nav .selector {
+    color: #d88f08 !important; }
 
-@media screen and (max-width: 950px) {
+.tazaDeCafe {
+  display: none; }
+
+@media screen and (max-width: 991px) {
   header {
     height: auto;
     width: 100%; }
-  .header_contenedor_uno {
-    flex-direction: column; }
-  .header_contenedor_dos {
-    display: none; }
-  .header_contenedor_tres {
-    width: 100%;
+    header .header_contenedor_uno {
+      padding: 0; }
+      header .header_contenedor_uno .contenedor_uno_logo {
+        display: none; }
+    header .header_contenedor_dos {
+      display: none; }
+    header .header_contenedor_tres {
+      width: 100%;
+      padding: 2rem 0;
+      margin: 0; }
+  .navbar {
     padding: 2rem 0;
-    margin: 0; }
-  ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 2rem; } }
+    width: 100%;
+    align-items: flex-start; }
+    .navbar .tazaDeCafe {
+      display: inline-block; }
+    .navbar .container-fluid {
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+      .navbar .container-fluid .navbar-toggler:focus,
+      .navbar .container-fluid .navbar-toggler:active {
+        outline: none;
+        box-shadow: none; }
+      .navbar .container-fluid .navbar-toggler {
+        border: none; }
+        .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+          width: 30px; }
+  .navbar-nav {
+    gap: 0.5rem;
+    margin-top: 1rem; } }
 
 /* FIN HEADER  */
 /* SECTION MAIN */
@@ -147,45 +174,47 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8rem 8rem;
+    gap: 6rem;
+    margin-left: 10rem; }
+    main section img {
+      width: 35vw;
+      border-radius: 1rem; }
+    main section .descripcion {
+      width: 90%; }
+    main section h4 {
+      font-size: 2rem;
+      color: gray; }
+    main section h2, main section .card .info-card .nombre-precio p, .card .info-card .nombre-precio main section p {
+      font-size: 4rem; }
+    main section p {
+      font-size: 2rem;
+      line-height: 35px;
+      margin-bottom: 3rem;
+      font-weight: 200; }
+    main section a {
+      text-decoration: none;
+      color: #d88f08;
+      font-size: 2rem;
+      border: 1px solid #d88f08;
+      padding: 1.5rem;
+      border-radius: 0.5rem; }
+      main section a:hover {
+        border: 1px solid #000000;
+        color: #000000; }
 
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 8rem 8rem;
-  gap: 6rem;
-  margin-left: 10rem; }
-  section img {
-    width: 35vw;
-    border-radius: 1rem; }
-  section .descripcion {
-    width: 90%; }
-  section h4 {
-    font-size: 2rem;
-    color: gray; }
-  section h2, section .card .info-card .nombre-precio p, .card .info-card .nombre-precio section p {
-    font-size: 4rem; }
-  section p {
-    font-size: 2rem;
-    line-height: 35px;
-    margin-bottom: 3rem;
-    font-weight: 200; }
-  section a {
-    text-decoration: none;
-    color: #d88f08;
-    font-size: 2rem;
-    border: 1px solid #d88f08;
-    padding: 1.5rem;
-    border-radius: 0.5rem; }
-
-@media screen and (max-width: 950px) {
-  section {
+@media screen and (max-width: 991px) {
+  main section {
     padding: 4rem 4rem;
     margin: 0;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center; }
-  section img {
+  main section img {
     width: 100%; } }
 
 /* FIN SECTION MAIN */
@@ -231,11 +260,17 @@ footer {
 
 .enlaces-rapidos ul {
   display: flex;
+  gap: 3rem;
   align-items: center; }
-
-.enlaces-rapidos ul li a {
-  font-size: 2rem;
-  columns: #9c9a9a; }
+  .enlaces-rapidos ul li {
+    list-style: none; }
+    .enlaces-rapidos ul li a {
+      font-size: 2rem;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 200; }
+      .enlaces-rapidos ul li a:hover {
+        color: #d88f08; }
 
 hr {
   width: 92%;
@@ -252,7 +287,7 @@ hr {
   gap: 2rem;
   margin-left: 5rem; }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 991px) {
   footer {
     height: auto;
     padding: 2rem; }
@@ -281,17 +316,12 @@ hr {
   padding-top: 0; }
 
 .blog-contenedor {
-  height: 25rem;
+  height: 10vw;
   background-image: url(../images/banner3.jpg); }
 
-.header_contenedor_dos_blog {
-  display: none; }
-
-.header_contenedor_tres_blog {
-  display: none; }
-
 .contenedor-blog h2, .contenedor-blog .card .info-card .nombre-precio p, .card .info-card .nombre-precio .contenedor-blog p {
-  text-align: center; }
+  text-align: center;
+  margin: 2rem 0; }
 
 .contenedor-blog img {
   width: 80vw; }
@@ -304,10 +334,18 @@ hr {
     margin-right: 0.5rem;
     fill: #d88f08; }
 
+.nota p {
+  padding: 0.5rem 0;
+  margin: 0; }
+
+@media screen and (max-width: 991px) {
+  .blog-contenedor {
+    height: auto; } }
+
 /* FIN BLOG.HTML */
 /* NOSOTROS.HTML */
 .nosotros {
-  height: auto; }
+  height: 10vw; }
 
 .contenedor-nosotros {
   display: flex;
@@ -336,24 +374,32 @@ hr {
     padding: 0 15rem;
     gap: 5rem; }
 
+.contenedor-nosotros-texto h1 {
+  font-weight: 700; }
+
 .contenedor-nosotros-texto h2, .contenedor-nosotros-texto .card .info-card .nombre-precio p, .card .info-card .nombre-precio .contenedor-nosotros-texto p {
   margin: 0;
   font-size: 3.2rem;
-  color: #777; }
+  color: #777;
+  font-weight: 700; }
 
 .contenedor-nosotros-texto p {
   margin: 1rem 0; }
 
 .contenedor-nosotros-texto ul {
-  padding: 0;
+  background-color: rgba(223, 223, 223, 0.226);
+  padding: 2rem;
   margin: 4rem 0;
   display: flex;
   flex-direction: column;
-  font-size: 1.8rem; }
+  font-size: 1.7rem;
+  gap: 3rem;
+  border-radius: 2rem; }
 
 .contenedor-nosotros-texto li {
   color: #777;
-  font-weight: 200; }
+  font-weight: 200;
+  list-style: none; }
 
 .contenedor-nosotros-texto li svg {
   width: 13px;
@@ -370,14 +416,20 @@ hr {
 
 .contenedor-nosotros-dos-videouno,
 .contenedor-nosotros-dos-videodos {
+  width: 320px;
+  height: 222px;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 3rem 3rem;
   text-align: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-left: 2rem; }
   .contenedor-nosotros-dos-videouno iframe,
   .contenedor-nosotros-dos-videodos iframe {
     border: none; }
+  .contenedor-nosotros-dos-videouno h3,
+  .contenedor-nosotros-dos-videodos h3 {
+    margin: 2rem 0; }
 
 @media screen and (max-width: 950px) {
   .contenedor-nosotros {
@@ -402,6 +454,10 @@ hr {
   .contenedor-nosotros-dos-videouno,
   .contenedor-nosotros-dos-videodos {
     align-items: center; } }
+
+@media screen and (max-width: 991px) {
+  .nosotros {
+    height: auto; } }
 
 /* FIN NOSOTROS.HTML */
 /* CONTACTO.HTML */
@@ -469,6 +525,9 @@ textarea {
   color: #ffffff;
   border: none;
   margin: 0; }
+  .boton:hover {
+    background-color: #b37605;
+    transition: 1s; }
 
 .caja-boton {
   text-align: right; }
@@ -504,8 +563,8 @@ textarea {
 .direccion svg,
 .preguntas svg,
 .telefono svg {
-  width: 30px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   background-color: #d88f08;
   padding: 1rem;
   border-radius: 50%; }
@@ -565,6 +624,19 @@ textarea {
   cursor: url(../images/seleccione.png), auto; }
 
 /* MENU.HTML */
+.menu-header {
+  background-image: url(../images/cafe-menu.jpg);
+  height: 10vw; }
+
+.menu-header::before {
+  content: "";
+  position: absolute;
+  background-color: #0000009f;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
 /* section */
 .navegador-main {
   background-color: #f3f3f3;
@@ -581,7 +653,8 @@ textarea {
 
 h1 {
   text-align: center;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin-top: 2rem; }
 
 .contenedor-menu {
   display: grid;
@@ -591,10 +664,10 @@ h1 {
   /* background-color: red; */ }
 
 .card {
-  display: flex;
-  justify-content: none;
-  align-items: none;
-  gap: 1rem; }
+  flex-direction: row !important;
+  align-items: center;
+  gap: 1rem;
+  border: none; }
   .card img {
     width: 80px;
     height: 60px; }
@@ -619,7 +692,9 @@ h1 {
     font-size: 1.8rem;
     color: #bbb; }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 991px) {
+  .menu-header {
+    height: auto; }
   .contenedor-menu {
     grid-template-columns: 1fr;
     padding: 3rem; } }
