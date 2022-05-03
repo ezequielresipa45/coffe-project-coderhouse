@@ -73,14 +73,18 @@ header {
         padding: 1.5rem;
         border-radius: 0.5rem;
         z-index: 1; }
-      header .header_contenedor_dos .header_contenedor_tres .carta:hover {
-        border: 2px solid #d88f08;
-        background-color: transparent;
-        transition: 1s; }
+      header .header_contenedor_dos .header_contenedor_tres .carta {
+        border: 2px solid #d88f08; }
+        header .header_contenedor_dos .header_contenedor_tres .carta:hover {
+          border: 2px solid #d88f08;
+          background-color: transparent;
+          transition: 1s; }
       header .header_contenedor_dos .header_contenedor_tres .nosotros {
         background-color: #ffffff;
-        color: #d88f08; }
+        color: #d88f08;
+        border: 2px solid #ffffff; }
         header .header_contenedor_dos .header_contenedor_tres .nosotros:hover {
+          box-sizing: border-box;
           border: 2px solid #ffffff;
           background-color: transparent;
           transition: 1s; }

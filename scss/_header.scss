@@ -59,6 +59,7 @@ header {
             }
 
             .carta {
+                border: 2px solid #d88f08;
                 &:hover {
                     border: 2px solid #d88f08;
                     background-color: transparent;
@@ -69,8 +70,9 @@ header {
             .nosotros {
                 background-color: #ffffff;
                 color: map-get($colores, principal);
-
+                border: 2px solid #ffffff;
                 &:hover {
+                    box-sizing: border-box;
                     border: 2px solid #ffffff;
                     background-color: transparent;
                     transition: 1s;
